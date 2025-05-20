@@ -7,9 +7,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 
+import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -118,7 +118,7 @@ export default function Home() {
             <div className="space-y-4">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 <span className="bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
-                  Hi, I'm Sky Kambale
+                  Hi, I'm Akash Kambale
                 </span>
                 <br />
                 Java Developer
@@ -177,7 +177,7 @@ export default function Home() {
                 </p>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <MapPin className="h-4 w-4" />
-                  <span>San Francisco, CA</span>
+                  <span>Pune Maharashtra, India</span>
                 </div>
               </div>
               <div className="space-y-4">
@@ -286,6 +286,7 @@ export default function Home() {
           </div>
         </section>
 
+
         {/* Projects Section */}
         <section id="projects" className="py-16">
           <div className="container space-y-8">
@@ -296,6 +297,8 @@ export default function Home() {
               <p className="text-muted-foreground">Some of my recent work</p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+
               {/* Project 1 */}
               <Card className="overflow-hidden border-purple-500/20 hover:shadow-md hover:shadow-purple-500/10 transition-all">
                 <div className="aspect-video w-full overflow-hidden">
@@ -342,7 +345,7 @@ export default function Home() {
               <Card className="overflow-hidden border-purple-500/20 hover:shadow-md hover:shadow-purple-500/10 transition-all">
                 <div className="aspect-video w-full overflow-hidden">
                   <Image
-                    src="/images/mobile-billboard.png"
+                    src="https://www.7searchppc.com/blog/wp-content/uploads/2024/06/Mobile-Advertising.png"
                     alt="Mobile-Billboard Advertisement"
                     width={400}
                     height={225}
@@ -384,7 +387,7 @@ export default function Home() {
               <Card className="overflow-hidden border-purple-500/20 hover:shadow-md hover:shadow-purple-500/10 transition-all">
                 <div className="aspect-video w-full overflow-hidden">
                   <Image
-                    src="/images/stock-pro.png"
+                    src="https://www.damcogroup.com/wp-content/uploads/2023/10/stock-market-prediction-using-ai.jpg"
                     alt="Stock Pro Realtime Analysis"
                     width={400}
                     height={225}
@@ -578,21 +581,21 @@ export default function Home() {
                   <div className="space-y-2 rounded-lg border border-purple-500/20 p-4 hover:shadow-md hover:shadow-purple-500/10 transition-all">
                     <div className="flex items-center justify-between">
                       <h4 className="font-bold">Master of Computer Science</h4>
-                      <span className="text-sm text-muted-foreground">2018 - 2020</span>
+                      <span className="text-sm text-muted-foreground">2024 -2026</span>
                     </div>
-                    <p className="text-muted-foreground">Stanford University</p>
+                    <p className="text-muted-foreground">Garware College , Pune</p>
                     <p className="text-sm">
-                      Specialized in Software Engineering and Java Enterprise Applications. Graduated with honors.
+                      Specialized in Software Engineering and Java Applications. Graduated with honors.
                     </p>
                   </div>
                   <div className="space-y-2 rounded-lg border border-purple-500/20 p-4 hover:shadow-md hover:shadow-purple-500/10 transition-all">
                     <div className="flex items-center justify-between">
                       <h4 className="font-bold">Bachelor of Science in Computer Science</h4>
-                      <span className="text-sm text-muted-foreground">2014 - 2018</span>
+                      <span className="text-sm text-muted-foreground">2020 - 2023</span>
                     </div>
-                    <p className="text-muted-foreground">University of California, Berkeley</p>
+                    <p className="text-muted-foreground">RBNB College , Shrirampur , University of Pune</p>
                     <p className="text-sm">
-                      Focused on software engineering and Java development. Participated in multiple hackathons.
+                      Learned software engineering and Java development. Focused on Leetcode DSA .
                     </p>
                   </div>
                 </div>
@@ -602,23 +605,13 @@ export default function Home() {
                   Work Experience
                 </h3>
                 <div className="space-y-6">
-                  <div className="space-y-2 rounded-lg border border-purple-500/20 p-4 hover:shadow-md hover:shadow-purple-500/10 transition-all">
-                    <div className="flex items-center justify-between">
-                      <h4 className="font-bold">Senior Java Developer</h4>
-                      <span className="text-sm text-muted-foreground">2021 - Present</span>
-                    </div>
-                    <p className="text-muted-foreground">Tech Innovations Inc.</p>
-                    <p className="text-sm">
-                      Lead the backend development team, architected microservices solutions, and implemented best
-                      practices for code quality and performance.
-                    </p>
-                  </div>
+                  
                   <div className="space-y-2 rounded-lg border border-purple-500/20 p-4 hover:shadow-md hover:shadow-purple-500/10 transition-all">
                     <div className="flex items-center justify-between">
                       <h4 className="font-bold">Java Developer</h4>
-                      <span className="text-sm text-muted-foreground">2018 - 2021</span>
+                      <span className="text-sm text-muted-foreground">Present 2021</span>
                     </div>
-                    <p className="text-muted-foreground">Digital Solutions LLC</p>
+                    <p className="text-muted-foreground">Digital Solutions </p>
                     <p className="text-sm">
                       Developed enterprise Java applications, collaborated with cross-functional teams, and optimized
                       application performance.
@@ -662,11 +655,11 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-2">
                     <Mail className="h-5 w-5 text-purple-500" />
-                    <span>sky.kambale@example.com</span>
+                    <span>akashkambalegenius111@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="h-5 w-5 text-purple-500" />
-                    <span>San Francisco, CA</span>
+                    <span>Pune Maharashtra, India</span>
                   </div>
                 </div>
                 <div className="space-y-2">
