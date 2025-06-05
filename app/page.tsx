@@ -324,7 +324,8 @@ export default function Home() {
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <Button
+                  <a href="https://echelon-seven.vercel.app/">
+                    <Button
                     variant="outline"
                     size="sm"
                     className="border-purple-500 text-purple-500 hover:bg-purple-500/10"
@@ -332,6 +333,8 @@ export default function Home() {
                     <Github className="h-4 w-4 mr-2" />
                     Code
                   </Button>
+                  </a>
+                <a href="https://echelon-seven.vercel.app/">
                   <Button
                     size="sm"
                     className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
@@ -339,6 +342,8 @@ export default function Home() {
                     <ExternalLink className="h-4 w-4 mr-2" />
                     Demo
                   </Button>
+                </a>
+                  
                 </CardFooter>
               </Card>
 
