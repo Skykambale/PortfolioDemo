@@ -165,7 +165,7 @@ export default function Home() {
               <div className="space-y-4">
                 <p>
                   I'm a passionate Java developer with a strong focus on creating robust, scalable, and efficient
-                  applications. With several years of experience in the field, I've developed a deep understanding of
+                  applications. I've developed a deep understanding of
                   Java and related technologies.
                 </p>
                 <p>
@@ -243,25 +243,7 @@ export default function Home() {
                     </div>
                     <span>Test-driven development</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <div className="rounded-full bg-gradient-to-r from-purple-600 to-cyan-600 p-1 mt-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-primary-foreground"
-                      >
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                    </div>
-                    <span>Microservices architecture</span>
-                  </li>
+                  
                   <li className="flex items-start gap-2">
                     <div className="rounded-full bg-gradient-to-r from-purple-600 to-cyan-600 p-1 mt-1">
                       <svg
@@ -324,7 +306,7 @@ export default function Home() {
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <a href="https://echelon-seven.vercel.app/">
+                  <a href="https://github.com/Skykambale/Echelon-Backend.git">
                     <Button
                     variant="outline"
                     size="sm"
@@ -371,6 +353,7 @@ export default function Home() {
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
+                  <a href="https://github.com/Skykambale/Pushpakraj.git">
                   <Button
                     variant="outline"
                     size="sm"
@@ -378,7 +361,8 @@ export default function Home() {
                   >
                     <Github className="h-4 w-4 mr-2" />
                     Code
-                  </Button>
+                  </Button></a>
+                  
                   <Button
                     size="sm"
                     className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
@@ -460,14 +444,11 @@ export default function Home() {
                   <div className="flex flex-wrap gap-2">
                     {[
                       "Java",
-                      "Spring Boot",
-                      "Spring MVC",
-                      "Spring Security",
-                      "JPA/Hibernate",
-                      "JUnit",
-                      "Mockito",
+                      "Servlet",
+                      "JSP",
+                      "DSA",
                       "Maven",
-                      "Gradle",
+                      
                     ].map((skill) => (
                       <div
                         key={skill}
@@ -483,7 +464,7 @@ export default function Home() {
                     Databases & Cloud
                   </h3>
                   <div className="flex flex-wrap gap-2">
-                    {["MySQL", "PostgreSQL", "MongoDB", "Redis", "AWS", "Docker", "Kubernetes", "CI/CD"].map(
+                    {["MySQL", "PostgreSQL", "MongoDB","Neo4j"].map(
                       (skill) => (
                         <div
                           key={skill}
@@ -500,7 +481,7 @@ export default function Home() {
                     Frontend & Others
                   </h3>
                   <div className="flex flex-wrap gap-2">
-                    {["HTML", "CSS", "JavaScript", "React", "RESTful APIs", "GraphQL", "Git", "Agile/Scrum"].map(
+                    {["HTML", "CSS", "JavaScript", ].map(
                       (skill) => (
                         <div
                           key={skill}
@@ -510,58 +491,6 @@ export default function Home() {
                         </div>
                       ),
                     )}
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
-                  Experience Level
-                </h3>
-                <div className="space-y-4">
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="text-sm font-medium">Java Development</span>
-                      <span className="text-sm text-muted-foreground">95%</span>
-                    </div>
-                    <div className="h-2 w-full overflow-hidden rounded-full bg-muted">
-                      <div className="h-full w-[95%] rounded-full bg-gradient-to-r from-purple-600 to-cyan-600"></div>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="text-sm font-medium">Spring Framework</span>
-                      <span className="text-sm text-muted-foreground">90%</span>
-                    </div>
-                    <div className="h-2 w-full overflow-hidden rounded-full bg-muted">
-                      <div className="h-full w-[90%] rounded-full bg-gradient-to-r from-purple-600 to-cyan-600"></div>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="text-sm font-medium">Database Management</span>
-                      <span className="text-sm text-muted-foreground">85%</span>
-                    </div>
-                    <div className="h-2 w-full overflow-hidden rounded-full bg-muted">
-                      <div className="h-full w-[85%] rounded-full bg-gradient-to-r from-purple-600 to-cyan-600"></div>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="text-sm font-medium">Microservices Architecture</span>
-                      <span className="text-sm text-muted-foreground">80%</span>
-                    </div>
-                    <div className="h-2 w-full overflow-hidden rounded-full bg-muted">
-                      <div className="h-full w-[80%] rounded-full bg-gradient-to-r from-purple-600 to-cyan-600"></div>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="text-sm font-medium">DevOps</span>
-                      <span className="text-sm text-muted-foreground">75%</span>
-                    </div>
-                    <div className="h-2 w-full overflow-hidden rounded-full bg-muted">
-                      <div className="h-full w-[75%] rounded-full bg-gradient-to-r from-purple-600 to-cyan-600"></div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -602,25 +531,6 @@ export default function Home() {
                     <p className="text-muted-foreground">RBNB College , Shrirampur , University of Pune</p>
                     <p className="text-sm">
                       Learned software engineering and Java development. Focused on Leetcode DSA .
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-6">
-                <h3 className="text-xl font-bold bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
-                  Work Experience
-                </h3>
-                <div className="space-y-6">
-                  
-                  <div className="space-y-2 rounded-lg border border-purple-500/20 p-4 hover:shadow-md hover:shadow-purple-500/10 transition-all">
-                    <div className="flex items-center justify-between">
-                      <h4 className="font-bold">Java Developer</h4>
-                      <span className="text-sm text-muted-foreground">Present 2021</span>
-                    </div>
-                    <p className="text-muted-foreground">Digital Solutions </p>
-                    <p className="text-sm">
-                      Developed enterprise Java applications, collaborated with cross-functional teams, and optimized
-                      application performance.
                     </p>
                   </div>
                 </div>
@@ -679,7 +589,7 @@ export default function Home() {
                       className="border-purple-500 text-purple-500 hover:bg-purple-500/10"
                       asChild
                     >
-                      <Link href="#" aria-label="GitHub">
+                      <Link href="https://github.com/Skykambale" aria-label="GitHub">
                         <Github className="h-5 w-5" />
                       </Link>
                     </Button>
@@ -689,7 +599,7 @@ export default function Home() {
                       className="border-purple-500 text-purple-500 hover:bg-purple-500/10"
                       asChild
                     >
-                      <Link href="#" aria-label="LinkedIn">
+                      <Link href="https://www.linkedin.com/in/akash-kambale-495382187/" aria-label="LinkedIn">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="20"
@@ -713,7 +623,7 @@ export default function Home() {
                       className="border-purple-500 text-purple-500 hover:bg-purple-500/10"
                       asChild
                     >
-                      <Link href="#" aria-label="Twitter">
+                      <Link href="https://x.com/the__sky__45" aria-label="Twitter">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="20"
